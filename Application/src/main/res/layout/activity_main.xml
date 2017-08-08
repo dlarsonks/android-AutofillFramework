@@ -72,5 +72,14 @@
             app:itemLogo="@drawable/ic_email_black_24dp"
             app:imageColor="@android:color/holo_purple"/>
 
+        <com.example.android.autofillframework.app.NavigationItem
+            android:id="@+id/addressButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:infoText="@string/address_info"
+            app:labelText="@string/navigation_button_address_label"
+            app:itemLogo="@drawable/ic_email_black_24dp"
+            app:imageColor="@android:color/holo_purple"/>
+
     </LinearLayout>
 </ScrollView>

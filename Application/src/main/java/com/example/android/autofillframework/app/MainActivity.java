@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationItem creditCardSpinners = findViewById(R.id.creditCardCheckoutButton);
         NavigationItem loginAutoComplete = findViewById(R.id.standardLoginWithAutoCompleteButton);
         NavigationItem emailCompose = findViewById(R.id.emailComposeButton);
+        NavigationItem address = findViewById(R.id.addressButton);
 
         loginEditTexts.setNavigationButtonClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(EmailComposeActivity.getStartActivityIntent(MainActivity.this));
+            }
+        });
+        address.setNavigationButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(AddressActivity.getStartActivityIntent(MainActivity.this));
             }
         });
     }
