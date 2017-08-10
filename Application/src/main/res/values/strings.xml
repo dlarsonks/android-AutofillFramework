@@ -86,6 +86,13 @@
         did the latter.
     </string>
     <string name="address_info">Sample address form.</string>
+    <string name="address_street">Street Address</string>
+    <string name="address_suite">Apt, suite (optional)</string>
+    <string name="address_city">City</string>
+    <string name="address_postal_code">Postal Code</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
     <plurals name="welcome_page_countdown">
         <item quantity="one">Automatically return to main page in %d second.</item>
         <item quantity="other">Automatically return to main page in %d seconds.</item>
