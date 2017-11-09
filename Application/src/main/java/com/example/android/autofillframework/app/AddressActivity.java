@@ -17,8 +17,7 @@ public class AddressActivity extends AppCompatActivity {
     private Spinner stateSpinner;
 
     public static Intent getStartActivityIntent(Context context) {
-        Intent intent = new Intent(context, AddressActivity.class);
-        return intent;
+        return new Intent(context, AddressActivity.class);
     }
 
     @Override
@@ -31,6 +30,15 @@ public class AddressActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> stateAdapter = ArrayAdapter.createFromResource(
                 this, R.array.states, android.R.layout.simple_spinner_item);
 
+        findViewById(R.id.button).setOnClickListener(v -> submit());
+
         stateSpinner.setAdapter(stateAdapter);
     }
+
+    private void submit() {
+        Intent intent = WelcomeActivity.getStartActivityIntent(this);
+        startActivity(intent);
+        finish();
+    }
+
 }
